@@ -14,7 +14,7 @@
           unless="debug.php.skip">
     <phingcall target="check-debug">
       <property name="debug.language" value="PHP" override="true" />
-      <property name="debug.pattern" value="var_dump\(|dsm\(|dpm\("
+      <property name="debug.pattern" value="debug_backtrace\(|print_r\(|var_dump\(|dsm\(|dpm\(|dvm\(|dpr\(|dvr\(|kpr\(|dargs\(|dd\(|ddebug_backtrace\(|db_queryd\(|firep\(|dfb\("
                 override="true" />
       <property name="debug.fileset" value="src.php.custom"/>
     </phingcall>
